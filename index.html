@@ -3,14 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login - Welcome Back</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex praesentium quibusdam molestias consequuntur, beatae quas eos, culpa voluptatibus maiores officia minima assumenda inventore rem ducimus magnam explicabo delectus, distinctio quaerat!</p>
-   <p><h1></p> 
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus soluta praesentium esse consectetur cumque quos? Obcaecati impedit nesciunt corrupti accusamus ex aspernatur, libero rerum nostrum voluptatem at ea facere totam?
-    </h1>
-    <p>h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corrupti praesentium, sapiente nemo, aspernatur est ratione quisquam vitae aliquam rerum maiores possimus. Atque minus ea non eos expedita asperiores voluptas?</h2></p> 
+    <div class="login-container">
+        <div class="login-header">
+            <h2>Welcome Back</h2>
+            <p>Please enter your details to sign in</p>
+        </div>
+
+        <form class="login-form" action="#" method="POST" onsubmit="event.preventDefault();">
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" name="email" placeholder="enter your email" required autocomplete="email">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="••••••••" required autocomplete="current-password">
+            </div>
+
+            <div class="form-options">
+                <label class="remember-me">
+                    <input type="checkbox" name="remember">
+                    <span>Remember me</span>
+                </label>
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="submit-btn">Sign In</button>
+        </form>
+
+        <div class="login-footer">
+            <p>Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+    </div>
 </body>
 </html>
